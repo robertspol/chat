@@ -1,0 +1,132 @@
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+    padding: 1.5vh;
+    border: solid #0c0 0.5vh;
+    border-radius: 1.5vh;
+
+    @include mq(xxsmall-landscape) {
+        border-width: 0.7vh;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2vh;
+        padding-bottom: 1vh;
+        border-bottom: solid #0c0 0.5vh;
+    }
+
+    &__bottom {
+        max-height: 40vh;
+        text-align: center;
+        overflow-y: auto;
+    }
+
+    &__btns-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    &__btn {
+        font-size: 0.9rem;
+        text-align: center;
+
+        @include mq(xxsmall) {
+            font-size: 1.1rem;
+        }
+
+        @include mq(medium) {
+            font-size: 1.7rem;
+        }
+
+        @include mq(large-landscape) {
+            font-size: 1.1rem;
+        }
+
+        @include mq(xxsmall-landscape) {
+            font-size: 0.8rem;
+        }
+
+        @include mq(large) {
+            font-size: 1.3rem;
+        }
+
+        @include mq(xlarge) {
+            font-size: 1rem;
+        }
+    }
+
+    &__search {
+        width: 90%;
+        margin: 1vh 0 2vh;
+        padding: 0.5vh 1vh;
+        background-color: transparent;
+        color: #fff;
+        border: 0.5vh solid #fff;
+
+        @include mq(medium) {
+            border-width: 0.4vh;
+        }
+    }
+
+    &__list-item {
+        margin-bottom: 1vh;
+    }
+
+    &__users-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+
+    i {
+        cursor: pointer;
+    }
+
+    img {
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+    }
+
+    &__info {
+        text-align: left;
+    }
+
+    &__name {
+        font-weight: bold;
+    }
+
+    &__is-active-wrapper {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.is-active {
+    width: 1.2vh;
+    height: 1.2vh;
+    margin-left: 1vh;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.online {
+    background-color: #0f0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
