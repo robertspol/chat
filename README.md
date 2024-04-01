@@ -1,6 +1,6 @@
 # Chat
 
-Komunikator stworzony w języku PHP umożliwiający użytkownikom wymianę wiadomości tekstowych. Chat posiada funkcję zakładania konta przez użytkowników.
+Komunikator stworzony w PHP i JavaScript umożliwiający użytkownikom wymianę wiadomości tekstowych. Chat posiada funkcję zakładania konta przez użytkowników.
 
 ## Jak zacząć
 
